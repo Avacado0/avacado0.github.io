@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    background-image: url("https://cdn.stealthoptional.com/images/ncavvykf/stealth/9d45b038446e5940c035e5bd79d2c1ae3bd4a875-750x374.png?rect=1,0,748,374&w=1200&h=600&auto=format");
+    font-family: 'Avenir', light, sans-serif;
+    background-size: 1350px;
+    background-repeat: no-repeat;
+    width: 1350px;
+    height: 1000px;
+    font-weight: 400;
+    padding-bottom: -100px;
+  }
+
+
+main {
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+}
+
+.URLBRO {
+    color: rgb(0, 255, 255);
+}
+
+h1 {
+    padding-top: 10px;
+    font-size: 45px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.HEADER1 {
+    text-shadow: 3px 3px 5px #ff0000, -4px -4px 5px #001275;
+}
+
+.INTROTEXT {
+    position:relative; left:-375px; top:00px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Avenir', light, sans-serif;
+    background-color: #2f00ff;
+    letter-spacing: 0.03em;
+    padding-left: -30px;
+    padding-right: -30x;
+    padding-bottom: 0px;
+    padding-top: -20x;
+    margin: 50px 400px 75px;
+}
+
+
+.IMPACTTEXT {
+    color: #ffffff;
+    text-align:center;
+    position:relative; left:0px; top:-800px;
+    background-image: url("https://drive.google.com/uc?export=view&id=1zBNGNxL7v-Sjp-dSHRk_aqabiO7wMjqO");
+    margin-top: 90px;
+    margin-bottom: 300px;
+    box-shadow:  3px 3px 5px #000000, -4px -4px 7px #000000;
+    padding-bottom: 10px;
+}
+
+.IMPACTTEXT2 {
+    opacity:100%;
+    transition: opacity 3s;
+}
+
+.IMPACTTEXT2:hover {
+    opacity: 0%;
+    transition: opacity 1s;
+}
+
+.IMPACTTEXT3 {
+    opacity:100%;
+    transition: opacity 1s;
+}
+
+
+.IMPACTTEXT3:hover {
+    opacity: 0%;
+    transition: opacity 1s;
+}
+
+#sources {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 15;
+    text-shadow: none;
+    position:relative; left:0px; top:-1400px;
+    background: white;
+    border-top: #000000;
+    border-width: 15px;
+    text-align:center;
+}
+
+.sourcehead {
+    font-size: 20;
+}
+
+.CONCLUDETEXT {
+    box-shadow:  -3px -3px 5px #ffffff;
+    color: #ffffff;
+    text-align:center;
+    position:relative; left:0px; top:-1100px;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    background-image: url("https://news.artnet.com/app/news-upload/2022/12/000002025.png");
+    opacity:100%;
+    transition: opacity 1s;
+    padding-bottom: 10px;
+}
+
+.CONCLUDETEXT2 {
+    text-shadow: 3px 3px 5px #000000, -3px -3px 7px #000000;
+    opacity:100%;
+    transition: opacity 1s;
+    transition: 0.6s;
+    padding-bottom: 10px;
+}
+
+.CONCLUDETEXT2:hover {
+    opacity: 0%;
+    transition: opacity 1s;
+    transition: 0.6s;
+    padding-bottom: 250px;
+}
+  
+.container{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+header {
+    background: #ffffff
+  }
+
+.WEBTITLE {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Avenir', light, sans-serif;
+    text-shadow: 3px 3px 5px #ff0000, -3px -3px 5px #0026ff;
+    font-weight: lighter;
+    font-size: 75px;
+    font-style: normal;
+    padding-bottom: 465px;
+    opacity: 100%;
+    transition: opacity 0.4s;
+
+}
+
+.WEBTITLE:hover {
+    opacity: 0%;
+    transition: opacity 0.4s;
+}
+
+.IMG2 {
+    width: 750px;
+    height: 645px;
+    position:relative; left:588px; top: -755px;
+    box-shadow:  4px 4px 5px #000000, -4px -4px 7px #000000;
+    transition: 2s;
+}
+
+.IMG2:hover {
+    width: 1600px;
+    height: 800px;
+    transition: 2s;
+    position:relative; left:00px; top: -772px;
+}
+
+.IMG3 {
+    width: 1350px;
+    height: 800px;
+    position:relative; left:0px; top: 100px;
+    border: none;
+    filter: brightness(35%);
+    z-index: 0;
+}
+
+header:after {
+    content: '';
+    display: table;
+    clear:both;
+}
+
+.TITLE {
+    background-size: 1800px;
+    background-repeat: no-repeat;
+    float: left;
+    font-size: 15px;
+    margin: 0px;
+    letter-spacing: -0.05em;
+    padding-bottom: 15;
+    padding-top: 14;
+}
+
+#navbar{
+    float: right;
+  }
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+#navbar li {
+    display: inline-block;
+    margin-left: 45px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+#navbar a {
+    color: #0080ca;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    transition: 0.5s ease-in-out;
+
+}
+
+#navbar a:hover {
+    color: #04AA6D;
+    background-color: #04042b;
+    padding-bottom: 18;
+    padding-top: 18;
+    padding-right: 16;
+    padding-left: 16;
+}
+

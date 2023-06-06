@@ -1,9 +1,127 @@
-<!DOCTYPE html>
 <html>
+<head id="TABTITLE">
+    <title>Stable Diffusion & AI Art</title>
+    <link rel="stylesheet" href="AIARTSTABLEDIFFUSIONV2.css" type="text/css"> 
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,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">
+</head>
+
+
+<body>
+<header>
+    <div class="container">
+        
+        <h1 class="TITLE">AI ART & STABLE DIFFUSION</h1>
+
+        <nav>
+            <ul id="navbar">
+                <li><a href="#Introduction">Introductory</a></li>
+                <li><a href="#Impact">Impact</a></li>
+                <li><a href="#Controversy">Controversy</a></li>
+                <li><a href="#Conclusion">Conclusion</a></li>
+                <li><a href="#Sources">Sources</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<head>
     <h1>
-        Hiiiii
+        <div class= "WEBTITLE" style="letter-spacing: 0.1em; position:relative; left:20px; top:125px;" >Stable Diffusion & AI Art</div>
+        <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+        <style>
+        @import url('https://fonts.cdnfonts.com/css/avenir');
+        </style>
+</head>
+
+<main>
+    <section class="INTROTEXT" id="Introduction">
+        <h1 class="HEADER1">
+        The Origin:
+        </h1>
+        <div>
+            <p>
+            As of the 22nd of August, 2022, an algorithm named Stable Diffusion was released publicly, along with an Open Source of the 2.0 Version being released in December of the same year.
+            The model was developed by the CompVis group at LMU Munich, and designed by Patrick Esser and Robin Rombach. 
+            The program's purpose was simple, convert text into imagery using an AI Generator. There was a problem however, the power of the AI's ability to convert text to imagery was uncanny, as the AI had access to digital knowledge and media, meaning that "Shrek fighting Thanos with a hamburger in a Vector style", or "Albert Einstein and The Batman flying in the Millennium Falcon drawn in Van Gogh's art-style" would be entirely possible. 
+            The AI's popularity slowly grew, with the public finding amusement in seeing the visuals of whatever their input was, almost unlimited by the possibility. 
+            Almost instantaneously, Stable Diffusion became a wide-spread tool for many people to use. <br/>
+
+
+            </p>
+            <p>
+                                
+            </p>
+            <p>
+            Although the Stable Diffusion had limits to the output-image every now and then, the release of the Stable Diffusion Open Source would result in the AI's perfection. At this point, people now had the ability to improve, expand and perfect the AI's ability, with one of the most powerful upgrades being the added ability to remember previous inputs. 
+            Once this had been done, AI could perfectly trace back to what a certain input was described as. If you were to construct a friend's face, or insert an already existing image as a reference, you would have the full ability to add them to any situation with Stable Diffusion. 
+            Such an example can be found in this video <a href="https://www.youtube.com/watch?v=W4Mcuh38wyM" target="_blank" class="URLBRO">here</a>, in Corridor Crew's video on Dream Studio, a program made by the same creators of Stable Diffusion, with Dream Studios having been created to use Stable Diffusion AI.<br>
+            </p>
+        </div>
+   </section>
+   <section>
+    <img class="IMG2" src="https://static.simonwillison.net/static/2022/stable-diffusion-1.jpg" alt="Sci-fi Desert Globe generetad from Stable Diffusion">
+   </section>
+    <section class="IMPACTTEXT" id="IMPACT"  alt="Stable Diffusion pictures, including Chris Hemsworth and Hot Donald Trump">
+        <h1 class="HEADER1" id="Impact">
+            The Impact:
+        </h1>
+            <div class="IMPACTTEXT2">
+                <p>
+                As you could imagine, this sparked severe problems to artists and creators alike, it was as destructive as it was useful. <br>
+                Jobs like CGI Animators, VFX, Digital Animators, Indie and professional Digital Artists, Concept Creators, and any job that includes digital creation would eventually become obsolete.<br>
+                Many artists had become worried, anxious, or angered by the idea, and around late December 2022, to early February 2023, various people would call out the idea, as well as explain the situation.<br>
+                Although the scenario easily fits with the concept of machinery replacing human jobs, a more fearful idea is that artificial intelligence could replicate creativity, an aspect of human nature that was long <br> thought to be irreplaceable by machine. Though not perfect enough to replace jobs as of June, 2023, the idea would continue to linger in the air for people to worry about.
+                </p>
+            </div>
+        <h1 class="HEADER1" Id="Controversy">
+            Controversy:
+        </h1>
+            <div class="IMPACTTEXT3">
+                <p>
+                    Fortunately, it seems AI cannot yet assimilate creativity. The method Stable Diffusion uses to create the prompt uses<br> the internet as a tool, and therefore may end up stealing hints of licensed artwork, both from company and indie artists. <br>
+                    This controversy is also shared between the relatives of Stable Diffusion, DALLE and Midjourney. It’d been found that the 5.85 billion images <br> used to train Stable Diffusion had been applied without the consent of any of the owners or website operators.<br>
+                    To help put into perspective, downloading all those images would result in 240 terabytes of space. 'Stability.AI' had even admitted<br> that a large portion of those images had been copyright infringed. Though Stability.AI offers its services free, the use of the images still bypass copyright law. <br>
+                    What separates this from distinct crime, is the argument that any image generated by Stable Diffusion will never result in a perfect copy<br> of any of the images used, though it still used the images as a reference. As of June 2023, Stable Diffusion is still running. <br>
+                    A more in-depth explanation can be found in <a href="https://www.youtube.com/watch?v=nIRbN52PA0o" target="_blank" class="URLBRO">'Solar Sand''s video</a>.
+                </p>
+            </div>
+    </section>
+    <section class="CONCLUDETEXT" id="Conclusion" alt="Cool mysterious fantasical city, stable diffusion">
+        <h1 class="HEADER1">
+            Conclusion:
+        </h1>
+            <div>
+                <p class="CONCLUDETEXT2">
+                    To summarize, those who seek a future where they use their creative skills may be in danger, acknowledge that this isn’t for certain, but be wary that an alternative career would be wise.<br>
+                    On the other hand, you may also seek to adapt to AI generated art, and use it to your advantage, rather than seeing it as a replacement, whether by mastering the use of AI Art, helping to improve it, encorporating it into digital visuals etc. <br>
+                    However, this isn't the only future, a more optimistic view is that AI Art may become obsolete in the sense that it’s instantaneous and requires little to no effort, meaning that in the future,<br>
+                    AI Art, Music, Animations, Videos etc. may become invaluable, with economy accepting only human talent, after all, what worth is creativity when it’s no longer creative?
+                </p>
+            </div>  
+    </section>
+</main>
+</body>
+<aside id="Sources">
+    <h1 class="sourcehead">
+        Credits:
     </h1>
-    <body>
-        how are youu?
-    </body>
+        <div>
+            <p>
+                Created by Austin Laulu<br>
+                Sources used:<br>
+                <a href="https://www.youtube.com/watch?v=W4Mcuh38wyM" target="_blank">https://www.youtube.com/watch?v=W4Mcuh38wyM</a><br>
+                <a href="https://stability.ai/blog/stable-diffusion-public-release" target="_blank">https://stability.ai/blog/stable-diffusion-public-release</a><br>
+                <a href="https://simonwillison.net/2022/Aug/29/stable-diffusion/" target="_blank">https://simonwillison.net/2022/Aug/29/stable-diffusion/</a><br>
+                <a href="https://www.lifewire.com/what-is-stable-diffusion-7485593" target="_blank">https://www.lifewire.com/what-is-stable-diffusion-7485593</a><br>
+                <a href="https://www.linkedin.com/pulse/what-able-diffusion-why-should-you-care-mike-a-sorrenti" target="_blank">https://www.linkedin.com/pulse/what-able-diffusion-why-should-you-care-mike-a-sorrenti</a><br>
+                <a href="https://www.youtube.com/watch?v=gv9cdTh8cUo" target="_blank">https://www.youtube.com/watch?v=gv9cdTh8cUo</a><br>
+                <a href="https://www.youtube.com/watch?v=nIRbN52PA0o" target="_blank">https://www.youtube.com/watch?v=nIRbN52PA0o</a><br>
+                <a href="https://www.youtube.com/watch?v=5Viy3Cu3DLk&t" target="_blank">https://www.youtube.com/watch?v=5Viy3Cu3DLk&t</a><br>
+                <a href="https://www.youtube.com/watch?v=0gNauGdOkro" target="_blank">https://www.youtube.com/watch?v=0gNauGdOkro</a><br>
+                <a href="https://blog.metaphysic.ai/stable-diffusion-is-video-coming-soon/" target="_blank">https://blog.metaphysic.ai/stable-diffusion-is-video-coming-soon/</a><br>
+                <a href="https://news.artnet.com/art-world/stable-diffusion-version-2-ai-generator-censorship-2220814" target="_blank">https://news.artnet.com/art-world/stable-diffusion-version-2-ai-generator-censorship-2220814</a><br>
+
+            </p>
+        </div>  
+</aside>
 </html>
